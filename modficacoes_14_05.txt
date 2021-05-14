@@ -1,0 +1,12 @@
+14/05/2021
+
+1- Corrigir valores infinitos nas velocidades
+	A: Substituir valores nulos em delta_t por metade do menor valor em delta_t
+		- Estatísticas permanecem constantes pos replace	
+		- Todas features dependentes de vel. nao possuem mais Nan ou Inf
+
+2-Corrigir colunas com NaN em train_seg pos feat_eng: deviation,vel_angular,curvat
+	A-deviation:	Fonte de nan é casos em que ponto inicial=ponto final
+		R: train_seg.deviation.fillna(train_seg['dist_from_act_init'],inplace=True)
+		-estatísticas continuam pouco alteradas
+	B-vel_angular e curvat: anular primeiro elemento 

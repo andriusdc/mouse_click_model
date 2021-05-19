@@ -1,0 +1,23 @@
+Modificacoes 18/05
+
+
+
+1-Funcionamento Feature Engineer:
+    a-)arrumar feature Direction
+      - está fornecendo somente valores 1 e 2, pq?
+      R:arrumando considerando quadrantes trigonométricos
+
+
+
+2- Limpar Nan's do df_action pós uso feat eng:
+  a-Problema com ações com uma só linha
+    R: corrigido com correct_small_actions em teste.ipynb 
+R:df_action sem nenhum valor NAN pós feat eng
+
+
+
+
+
+  3-Arrumar problema do conda
+
+
